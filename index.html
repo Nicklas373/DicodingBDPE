@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="icon" href="assets/image/HME_Logo_Hi.png" type="image/icon type">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hana Media Encoder</title>
+        <div class="banner">
+            <img class="banner-logo" src="assets/image/HME_Logo_Hi.png" height="64px" alt="HME Logo">
+            <span><a class="banner-text" href="#HME">Hana Media Encoder</a></span>
+            <span><a class="banner-submenu-sub-text banner-submenu-sub-text-ext" href="#features">Features</a></span>
+            <span><a class="banner-submenu-sub-text" href="#downloads">Downloads</a></span>
+            <span><a class="banner-submenu-sub-text" href="#installation">Installation</a></span>
+            <span><a class="banner-submenu-sub-text" href="#supportedCodec">Supported Codecs</a></span>
+            <span><a class="banner-submenu-sub-text" href="https://github.com/Nicklas373/Hana-Media-Encoder" target="_blank" rel="noopener noreferrer">Github</a></span>
+        </div>
+    </head>
+    <main>
+        <body>
+            <div id="content">
+                <article id="HME" class="card">
+                    <h2>Hana Media Encoder</h2>
+                    <hr>
+                    <p>Multimedia application that have feature to encode, decode, many other function to process media files using FFMPEG pre-build application (Windows Version),
+                    HME works by creating line of command based on user preferences that was taken from application available menu or options then execute it to FFMPEG, FFPLAY or FFPROBE, for now
+                    HME only focus to work with only hardware GPU accelerated codec that FFMPEG has support it, for now (H264 and H265) codec only, and it does not have any aim to support
+                    native or software or even CPU based encoding for media file in the future.</p>
+                </article>
+                <article id="features" class="card">
+                    <h2>Features</h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <th><img class="image" src="assets/image/Open_media-W.png" title="Browse Media"></th>
+                            <th><img class="image" src="assets/image/Start_encode-W.png" title="Start Encode"></th>
+                            <th><img class="image" src="assets/image/Preview-W.png" title="Preview Media"></th>
+                            <th><img class="image" src="assets/image/Information-W.png" title="Information"></th>
+                            <th><img class="image" src="assets/image/Option-W.png" title="Options"></th>
+                            <th><img class="image" src="assets/image/Audio_codec-W.png" title="Audio Codec"></th>
+                            <th><img class="image" src="assets/image/Video_codec-W.png" title="Video Codec"></th>
+                        </tr>
+                    </table>
+                    <ul class="ul-alt">
+                        <li>Hardware GPU accelerated for encoding</li>
+                        <li>Manage chapter from media file (Video Only)</li>
+                        <li>Muxing or demuxing media file with specific media stream or all media stream with same or different profile for each stream</li>
+                        <li>OTA updates</li>
+                        <li>Trim media file with specific stream or all stream and with same or different profile for each stream</li>
+                        <li>Preview media file by using FFPLAY</li>
+                        <li>Widely media file format support for encoding with same or different profile for each stream</li>
+                    </ul>
+                </article>
+                <article id="downloads" class="card">
+                    <h2>Downloads</h2>
+                    <hr>
+                    <h3 style="text-align:center">Available Downloads</h3>
+                    <table>
+                        <tr>
+                            <th>
+                                <a href="https://github.com/Nicklas373/Hana-Media-Encoder/releases" target="_blank" rel="noopener noreferrer">
+                                    <div class="downloadCard">
+                                        <img src="assets/image/github-logo.png" class="downloadImage"/>
+                                        <div class="spanDownload">Download from GitHub</div>
+                                    </div>
+                                </a>
+                            </th>
+                            <th>
+                                <a href="https://www.softpedia.com/get/Multimedia/Video/Encoders-Converter-DIVX-Related/Hana-Media-Encoder.shtml" target="_blank" rel="noopener noreferrer">
+                                    <div class="downloadCard">
+                                        <img src="assets/image/softpedia-logo.png" class="downloadImage"/>
+                                        <div class="spanDownload">Download from Softpedia</div>
+                                    </div>
+                                </a>
+                            </th>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <div onclick="clDropDown()" class="dropbtn-cl card" id="ver_date"></div>
+                        <div id="clDropdown" class="dropbtn-cl-content">
+                            <ul>
+                                <li id="changelog"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article id="installation" class="card">
+                    <h2>Installation</h2>
+                    <hr>
+                    <ul>
+                        <li>Download FFMPEG, .NET Framework 6.0 and Hana Media Encoder setup</li>
+                        <li>Extract FFMPEG into specified folder</li>
+                        <li>Install Hana Media Encoder beside folder location <strong>except "Program Files" or "Program Files (x86)"</strong> or other folder that doesn't required any permission (Due write-access protection) <strong>(Ex: Install it on desktop or user folder)</strong></li>
+                        <li>After installation completed, Go to options menu to configure FFMPEG binary folder to your bin folder from FFMPEG folder (FFMPEG/bin)</li>
+                        <li>After application restart then open application again then go to options</li>
+                        <li>Checklist 'Enable GPU Hardware Accelerated' <strong>[NOTE: Please configure correct GPU name with your current primary GPU Renderer]</strong></li>
+                        <li>You're good to go</li>
+                    </ul>
+                </article>
+                <article id="supportedCodec" class="card">
+                    <h2>Supported Codecs</h2>
+                    <hr>
+                    <h3>Encoding Video Codec Matrix</h3>
+                        <table class="alt-table">
+                            <tr class="alt-table">
+                                <th class="alt-th">GPU / Codec</th>
+                                <th class="alt-th">H.264</th>
+                                <th class="alt-th">H.265</th>
+                            </tr>
+                            <tr class="alt-table">
+                                <th class="alt-th">AMD (AMF)</th>
+                                <th class="alt-th-sub-text">H.264 AMF</th>
+                                <th class="alt-th-sub-text">H.265 AMF</th>
+                            </tr>
+                            <tr class="alt-table">
+                                <th class="alt-th">INTEL (Quicksync)</th>
+                                <th class="alt-th-sub-text">H.264 QSV</th>
+                                <th class="alt-th-sub-text">H.265 QSV</th>
+                            </tr>
+                            <tr class="alt-table">
+                                <th class="alt-th">NVIDIA (NVENC)</th>
+                                <th class="alt-th-sub-text">H.264 NVENC</th>
+                                <th class="alt-th-sub-text">H.265 NVENC</th>
+                            </tr>
+                        </table>
+                    <br>
+                    <h3>Audio / Video Codec Support Matrix</h3>
+                    <table class="alt-table">
+                        <tr class="alt-table">
+                            <th class="alt-th">Audio / Video</th>
+                            <th class="alt-th">AAC</th>
+                            <th class="alt-th">MPEG-2</th>
+                            <th class="alt-th">MPEG-3</th>
+                            <th class="alt-th">OPUS / VORBIS</th>
+                            <th class="alt-th">FLAC</th>
+                            <th class="alt-th">WAV</th>
+                        </tr>
+                        <tr class="alt-table">
+                            <th class="alt-th">MP4</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                            <th class="alt-th-sub-text">x</th>
+                            <th class="alt-th-sub-text">x</th>
+                            <th class="alt-th-sub-text">x</th>
+                            <th class="alt-th-sub-text">x</th>
+                        </tr>
+                        <tr class="alt-table">
+                            <th class="alt-th">MKV</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                            <th class="alt-th-sub-text">&#10003;</th>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+            <aside class="aside-card">
+                <section class="aside-banner aside-banner-text">
+                    <img id="snap" class="image snapImage" src="assets/image/snap_1.png">
+                    <span class="spanText">Overview</span>
+                    <button id="previous" class="button-style"><img src="assets/image/arrow_prev.png" height="32px"></button>
+                    <button id="next" class="button-style"><img src="assets/image/arrow_next.png" height="32px"></button>
+                </section>
+                <br><br><br>
+                <section class="profileCard">
+                    <img src="assets/image/SSHME Image .png" class="profileCoverImage">
+                    <img src="assets/image/3x4 Foto.jpg" class="profileImage">
+                    <h1 class="profileText">Dicky Herlambang</h1>
+                    <p class="profileSubText">IT Support</p>
+                    <p class="profileSubText profileSubSubText">24 y.o | Junior Android Kernels & App Developer | Java / Kotlin, C, C++, Visual Basic, Bash.</p>
+                    <div onclick="pfDropDown()" class="dropbtn-pf profileContactCard" id="profile">Contact Me</div>
+                    <table id="pfDropdown" class="dropbtn-pf-content profileTable">
+                        <tr>
+                            <th class="profileTh">
+                                <a href="https://github.com/Nicklas373" target="_blank" rel="noopener noreferrer">
+                                    <img class="profileSubImage" src="assets/image/github-hi.png" title="GitHub">
+                                </a>
+                            </th>
+                            <th class="profileTh">
+                                <a href="https://www.linkedin.com/in/dicky-herlambang-b8247813a/" target="_blank" rel="noopener noreferrer">
+                                    <img class="profileSubImage" src="assets/image/linkedin.png" title="Linkedin">
+                                </a>
+                            </th>
+                            <th class="profileTh">
+                                <a href="https://t.me/Nanami337" target="_blank" rel="noopener noreferrer">
+                                    <img class="profileSubImage" src="assets/image/telegram.png" title="Telegram">
+                                </a>
+                            </th>
+                        </tr>
+                    </table>
+                </section>
+            </aside>
+            <script src="assets/js/image-slideshow.js"></script>
+            <script src="assets/js/JSONparse.js"></script>
+            <script src="assets/js/changelogDropDown.js"></script>
+            <script src="assets/js/profileDropDown.js"></script>
+        </body>
+    </main>
+    <footer>
+        <hr>
+        <br>
+        &copy; 2016 - 2022, HANA-CI Build Project
+    </footer>
+</html>
